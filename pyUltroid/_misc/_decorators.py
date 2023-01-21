@@ -89,7 +89,6 @@ def ultroid_cmd(
                 if fullsudo and ult.sender_id not in SUDO_M.fullsudos:
                     return await eod(ult, get_string("py_d2"), time=15)
             chat = ult.chat
-                    return
             if admins_only:
                 if ult.is_private:
                     return await eod(ult, get_string("py_d3"))
